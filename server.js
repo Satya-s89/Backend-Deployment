@@ -1,12 +1,10 @@
-const express = require("express")
+const express = require("express");
 const app = express();
 
-
-app.get("/ping",(res,req) => {
+app.get("/ping", (req, res) => {
     res.send("pong");
-})
+});
 
-
-app.listen(8080,() => {
+app.listen(8080, () => {
     console.log("connected");
-})
+});
