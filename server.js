@@ -1,10 +1,11 @@
-const express = require("express");
+const express = require('express');
 const app = express();
+const PORT = 5000;
 
-app.get("/ping", (req, res) => {
-    res.send("pong");
+app.get('/ping', (req, res) => {
+  res.send('pong');
 });
 
-app.listen(8080, () => {
-    console.log("connected");
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
